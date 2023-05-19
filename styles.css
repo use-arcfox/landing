@@ -1,0 +1,205 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #FBFBF1;
+    background-image: url(https://arc.net/grid.svg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.content {
+  background: rgb(252, 163, 159);
+  background-image: url(https://arc.net/noise.png);
+  background-attachment: fixed;
+  
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-family: Marlin, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(250, 69, 49);
+}
+
+.content p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(250, 69, 49);
+}
+
+.content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+    height: 66px;
+    overflow: visible;
+    background: #FFF;
+    color: #032CE2;
+    height: 56px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 32px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+  
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.content a:hover {
+  transform: scale(1.04);
+  transition: all .2s ease-in-out; 
+}
+
+.meet {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.meet h1 {
+  font-family: Marlin, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(250, 69, 49);
+}
+
+.meet p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #fa4632;
+  width: 50%;
+}
+
+.citation {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fa4632;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.meet a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+    height: 66px;
+    overflow: visible;
+    background: #FFF;
+    color: #032CE2;
+    height: 56px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 32px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+  
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.meet a:hover {
+  transform: scale(1.04);
+  transition: all .2s ease-in-out; 
+}
+
+.meet img {
+  width: 50%;
+  border-radius: 7px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.meet img:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: all 0.2s ease-in-out;
+}
+
+.meet img:active {
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #F5F6DD;
+  padding: 40px;
+}
+
+footer h1 {
+  font-family: Marlin, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  font-size: 45px;
+  font-weight: bold;
+  color: #fa4632;
+}
+
+.credits p {
+font-family: Marlin, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fa4632;
+}
+
+.credits a {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fa4632;
+  text-decoration: none;
+}
