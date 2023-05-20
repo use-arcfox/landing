@@ -65,6 +65,7 @@ body {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+    text-decoration: none;
 }
 
 .content a:hover {
@@ -124,6 +125,7 @@ body {
     padding: 0 32px;
     border: 2px solid rgba(0, 0, 0, 0.1);
     transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+    text-decoration: none;
 }
 
 .meet a:hover {
