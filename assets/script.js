@@ -5,5 +5,5 @@ window.addEventListener('load', function() {
       setTimeout(function() {
         preloader.style.display = 'none';
       }, 1000); // Fade-out duration (in milliseconds)
-    }, 2500); // Adjust the delay time as needed (in milliseconds)
+    }, 1250); // Adjust the delay time as needed (in milliseconds)
   });
