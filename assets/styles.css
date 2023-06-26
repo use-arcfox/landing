@@ -7,11 +7,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #FBFBF1;
-    background-image: url(grid.svg);
-    background-position: 50% 50%;
-    background-attachment: fixed;
+  scroll-snap-type: y mandatory;
+  background-color: #FBFBF1;
+  background-image: url(grid.svg);
+  background-position: 50% 50%;
+  background-attachment: fixed;
 }
 
 #preloader {
@@ -32,8 +37,8 @@ body {
 
 #logo {
   background-image: url('favicon.png');
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,21 +47,26 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .content {
+  scroll-snap-align: start;
   background: rgb(252, 163, 159);
   background-image: url(noise.png);
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  height: 90vh;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 20px;
+  min-height: 100vh; /* Added */
 }
 
 .content h1 {
@@ -75,45 +85,46 @@ body {
 }
 
 .content a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    z-index: 2;
-    height: 66px;
-    overflow: visible;
-    background: #FFF;
-    color: #032CE2;
-    height: 56px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    border-radius: 10px;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0 32px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    transition: border 150ms ease, transform 150ms ease, color 150ms ease;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 2;
+  height: 66px;
+  overflow: visible;
+  background: #FFF;
+  color: #032CE2;
+  height: 56px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0 32px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+  text-decoration: none;
 }
 
 .content a:hover {
   transform: scale(1.04);
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 
 .meet {
+  scroll-snap-align: start;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 20px;
   text-align: center;
+  min-height: 100vh; /* Added */
 }
 
 .meet h1 {
@@ -141,28 +152,28 @@ body {
 }
 
 .meet a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    height: 66px;
-    background: #FFF;
-    color: #032CE2;
-    height: 56px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    border-radius: 10px;
-    padding: 0 32px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    transition: border 150ms ease, transform 150ms ease, color 150ms ease;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 66px;
+  background: #FFF;
+  color: #032CE2;
+  height: 56px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  border-radius: 10px;
+  padding: 0 32px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: border 150ms ease, transform 150ms ease, color 150ms ease;
+  text-decoration: none;
 }
 
 .meet a:hover {
   transform: scale(1.04);
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 
 .meet img {
@@ -185,9 +196,9 @@ body {
 
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed */
+  align-items: flex-start; /* Changed */
   background: #F5F6DD;
   padding: 40px;
 }
@@ -204,6 +215,7 @@ footer h1 {
   font-size: 20px;
   font-weight: bold;
   color: #fa4632;
+  margin: 10px 0;
 }
 
 .credits a {

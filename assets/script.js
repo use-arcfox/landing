@@ -1,3 +1,4 @@
+ /* Preloader
 window.addEventListener('load', function() {
     const preloader = document.getElementById('preloader');
     setTimeout(function() {
@@ -6,4 +7,4 @@ window.addEventListener('load', function() {
         preloader.style.display = 'none';
       }, 1000); // Fade-out duration (in milliseconds)
     }, 1250); // Adjust the delay time as needed (in milliseconds)
-  });
+  }); */ 
